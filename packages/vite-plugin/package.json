@@ -39,7 +39,7 @@
     "@ruijadom/telescope-core": "*"
   },
   "devDependencies": {
-    "@types/node": "^20.10.6",
+    "@types/node": "^24.9.1",
     "vite": "^5.0.0"
   },
   "peerDependencies": {
