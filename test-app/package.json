@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ruijadom/telescope": "^0.1.1",
-    "@ruijadom/telescope-browser": "^0.1.1",
+    "@ruijadom/telescope": "^0.1.3",
+    "@ruijadom/telescope-browser": "^0.3.0",
     "@ruijadom/telescope-vite": "^0.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"

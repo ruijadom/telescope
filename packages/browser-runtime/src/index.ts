@@ -115,8 +115,8 @@ function setupClickListener(): void {
 
     const target = event.target as HTMLElement;
 
-    // Ignore clicks on Hubble overlay
-    if (target.closest('#hubble-overlay')) {
+    // Ignore clicks on Telescope overlay
+    if (target.closest('#telescope-overlay')) {
       return;
     }
 
@@ -130,7 +130,7 @@ function setupClickListener(): void {
       overlay.show(componentData, { x: event.clientX, y: event.clientY });
 
       // Highlight in tree view if open
-      const treeElement = document.getElementById('hubble-tree-view');
+      const treeElement = document.getElementById('telescope-tree-view');
       if (treeElement) {
         treeView.highlightComponent(componentData.instanceId);
       }
@@ -160,8 +160,8 @@ function setupHoverListener(): void {
 
     const target = event.target as HTMLElement;
 
-    // Ignore Hubble overlay
-    if (target.closest('#hubble-overlay') || target.closest('#hubble-highlight')) {
+    // Ignore Telescope overlay
+    if (target.closest('#telescope-overlay') || target.closest('#telescope-highlight')) {
       return;
     }
 
@@ -179,7 +179,7 @@ function highlightElement(element: HTMLElement): void {
   const rect = element.getBoundingClientRect();
   
   currentHighlight = document.createElement('div');
-  currentHighlight.id = 'hubble-highlight';
+  currentHighlight.id = 'telescope-highlight';
   currentHighlight.style.cssText = `
     position: fixed;
     pointer-events: none;
@@ -206,7 +206,7 @@ function removeHighlight(): void {
 }
 
 /**
- * Activates Hubble component selection mode
+ * Activates Telescope component selection mode
  */
 function activateTelescope(): void {
   isTelescopeActive = true;
@@ -218,7 +218,7 @@ function activateTelescope(): void {
 }
 
 /**
- * Deactivates Hubble component selection mode
+ * Deactivates Telescope component selection mode
  */
 function deactivateTelescope(): void {
   isTelescopeActive = false;
@@ -233,7 +233,7 @@ function deactivateTelescope(): void {
  */
 function showActivationIndicator(): void {
   const indicator = document.createElement('div');
-  indicator.id = 'hubble-indicator';
+  indicator.id = 'telescope-indicator';
   indicator.style.cssText = `
     position: fixed;
     top: 20px;
@@ -251,7 +251,7 @@ function showActivationIndicator(): void {
   `;
   
   const text = document.createElement('div');
-  text.textContent = '⚛️ Hubble Active - Click to inspect';
+  text.textContent = '🔭 Telescope Active - Click to inspect';
   indicator.appendChild(text);
   
   const hint = document.createElement('div');
@@ -270,7 +270,7 @@ function showActivationIndicator(): void {
  * Hides activation indicator
  */
 function hideActivationIndicator(): void {
-  const indicator = document.getElementById('hubble-indicator');
+  const indicator = document.getElementById('telescope-indicator');
   if (indicator) {
     indicator.remove();
   }
@@ -280,7 +280,7 @@ function hideActivationIndicator(): void {
  * Toggles component tree view
  */
 function toggleTreeView(): void {
-  const existingTree = document.getElementById('hubble-tree-view');
+  const existingTree = document.getElementById('telescope-tree-view');
   
   if (existingTree) {
     treeView.hide();
@@ -327,6 +327,14 @@ if (isBrowser()) {
   } else {
     initialize();
   }
+}
+
+/**
+ * Initialize Telescope with custom configuration
+ */
+export function initTelescope(config?: any): void {
+  console.log('[Telescope] Initializing with config:', config);
+  initialize();
 }
 
 // Export for manual initialization if needed

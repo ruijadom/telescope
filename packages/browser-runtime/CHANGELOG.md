@@ -1,5 +1,11 @@
 # @ruijadom/telescope-browser
 
+## 0.3.0
+
+### Minor Changes
+
+- fix init method
+
 ## 0.2.0
 
 ### Minor Changes
