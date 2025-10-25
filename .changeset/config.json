@@ -1,0 +1,13 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@3.1.1/schema.json",
+  "changelog": "@changesets/cli/changelog",
+  "commit": false,
+  "fixed": [],
+  "linked": [
+    ["@ruijadom/telescope-core", "@ruijadom/telescope-browser", "@ruijadom/telescope-cursor", "@ruijadom/telescope-vite", "@ruijadom/telescope-webpack", "@ruijadom/telescope-cli"]
+  ],
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": []
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@ruijadom/telescope-webpack",
+  "version": "0.1.0",
+  "description": "Webpack plugin for Telescope integration",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruijadom/telescope.git",
+    "directory": "packages/webpack-plugin"
+  },
+  "author": "Rui Jadom <ruijadom@gmail.com>",
+  "license": "MIT",
+  "keywords": ["telescope", "webpack", "plugin", "developer-tools", "devtools"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "@ruijadom/telescope-core": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "webpack": "^5.89.0"
+  },
+  "peerDependencies": {
+    "webpack": "^5.0.0",
+    "typescript": "^5.0.0"
+  }
+}

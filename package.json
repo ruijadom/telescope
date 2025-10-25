@@ -1,0 +1,40 @@
+{
+  "name": "telescope",
+  "version": "0.1.0",
+  "description": "Developer tool for seamless navigation between UI components in the browser and their source code in your editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruijadom/telescope.git"
+  },
+  "author": "Rui Jadom <ruijadom@gmail.com>",
+  "license": "MIT",
+  "keywords": ["telescope", "developer-tools", "cursor", "vscode", "component-inspector", "devtools"],
+  "workspaces": [
+    "packages/core",
+    "packages/browser-runtime",
+    "packages/cursor-integration",
+    "packages/vite-plugin",
+    "packages/webpack-plugin",
+    "packages/cli",
+    "packages/telescope"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "prepublishOnly": "npm run build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "npm run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

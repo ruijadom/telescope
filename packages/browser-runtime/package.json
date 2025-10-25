@@ -1,0 +1,42 @@
+{
+  "name": "@ruijadom/telescope-browser",
+  "version": "0.1.0",
+  "description": "Browser runtime for component detection and overlay UI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruijadom/telescope.git",
+    "directory": "packages/browser-runtime"
+  },
+  "author": "Rui Jadom <ruijadom@gmail.com>",
+  "license": "MIT",
+  "keywords": ["telescope", "developer-tools", "browser", "component-inspector"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "@ruijadom/telescope-core": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

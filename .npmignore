@@ -1,0 +1,33 @@
+# Development files
+.kiro/
+.vscode/
+examples/
+docs/
+node_modules/
+
+# Source files (only publish dist)
+packages/*/src/
+packages/*/tsconfig.json
+packages/*/tsup.config.ts
+
+# Test files
+**/__tests__/
+**/*.test.ts
+**/*.spec.ts
+**/vitest.config.ts
+
+# Build artifacts
+*.log
+*.tsbuildinfo
+
+# Git
+.git/
+.gitignore
+
+# CI/CD
+.github/
+.changeset/
+
+# Misc
+README.md
+tsconfig.base.json
