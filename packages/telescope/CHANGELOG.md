@@ -1,0 +1,14 @@
+# @ruijadom/telescope
+
+## 0.1.1
+
+### Patch Changes
+
+- core system
+- Updated dependencies
+  - @ruijadom/telescope-browser@0.1.1
+  - @ruijadom/telescope-cli@0.1.1
+  - @ruijadom/telescope-core@0.1.1
+  - @ruijadom/telescope-cursor@0.1.1
+  - @ruijadom/telescope-vite@0.1.1
+  - @ruijadom/telescope-webpack@0.1.1

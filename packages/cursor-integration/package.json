@@ -1,6 +1,6 @@
 {
   "name": "@ruijadom/telescope-cursor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cursor editor integration for file opening, code insertion, and AI services",
   "repository": {
     "type": "git",
@@ -9,7 +9,13 @@
   },
   "author": "Rui Jadom <ruijadom@gmail.com>",
   "license": "MIT",
-  "keywords": ["telescope", "cursor", "editor", "ai", "vscode"],
+  "keywords": [
+    "telescope",
+    "cursor",
+    "editor",
+    "ai",
+    "vscode"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -28,8 +34,7 @@
     "dev": "tsup --watch",
     "clean": "rm -rf dist",
     "test": "vitest --run",
-    "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run clean && npm run build && npm run test"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@ruijadom/telescope-core": "*"

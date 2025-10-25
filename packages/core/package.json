@@ -1,6 +1,6 @@
 {
   "name": "@ruijadom/telescope-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Core types, configuration management, and WebSocket server for Telescope",
   "repository": {
     "type": "git",
@@ -9,7 +9,11 @@
   },
   "author": "Rui Jadom <ruijadom@gmail.com>",
   "license": "MIT",
-  "keywords": ["telescope", "developer-tools", "devtools"],
+  "keywords": [
+    "telescope",
+    "developer-tools",
+    "devtools"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -27,8 +31,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "clean": "rm -rf dist",
-    "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run clean && npm run build"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "ws": "^8.16.0"

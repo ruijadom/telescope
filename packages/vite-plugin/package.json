@@ -1,6 +1,6 @@
 {
   "name": "@ruijadom/telescope-vite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vite plugin for Telescope integration",
   "repository": {
     "type": "git",
@@ -9,7 +9,13 @@
   },
   "author": "Rui Jadom <ruijadom@gmail.com>",
   "license": "MIT",
-  "keywords": ["telescope", "vite", "plugin", "developer-tools", "devtools"],
+  "keywords": [
+    "telescope",
+    "vite",
+    "plugin",
+    "developer-tools",
+    "devtools"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -27,8 +33,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "clean": "rm -rf dist",
-    "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run clean && npm run build"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@ruijadom/telescope-core": "*"

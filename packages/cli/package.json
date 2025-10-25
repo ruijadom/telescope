@@ -1,6 +1,6 @@
 {
   "name": "@ruijadom/telescope-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Command line interface for Telescope",
   "repository": {
     "type": "git",
@@ -9,7 +9,12 @@
   },
   "author": "Rui Jadom <ruijadom@gmail.com>",
   "license": "MIT",
-  "keywords": ["telescope", "cli", "developer-tools", "devtools"],
+  "keywords": [
+    "telescope",
+    "cli",
+    "developer-tools",
+    "devtools"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

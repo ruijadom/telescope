@@ -1,6 +1,6 @@
 {
   "name": "@ruijadom/telescope",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Meta package for Telescope - Developer tool for seamless navigation between UI components in the browser and their source code in your editor",
   "repository": {
     "type": "git",
@@ -9,7 +9,18 @@
   },
   "author": "Rui Jadom <ruijadom@gmail.com>",
   "license": "MIT",
-  "keywords": ["telescope", "developer-tools", "cursor", "vscode", "testing", "test-ids", "vite", "webpack", "devtools", "component-inspector"],
+  "keywords": [
+    "telescope",
+    "developer-tools",
+    "cursor",
+    "vscode",
+    "testing",
+    "test-ids",
+    "vite",
+    "webpack",
+    "devtools",
+    "component-inspector"
+  ],
   "main": "./index.js",
   "types": "./index.d.ts",
   "files": [
@@ -21,11 +32,11 @@
     "build": "echo 'No build needed for meta package'"
   },
   "dependencies": {
-    "@ruijadom/telescope-core": "0.1.0",
-    "@ruijadom/telescope-browser": "0.1.0",
-    "@ruijadom/telescope-cursor": "0.1.0",
-    "@ruijadom/telescope-vite": "0.1.0",
-    "@ruijadom/telescope-webpack": "0.1.0",
-    "@ruijadom/telescope-cli": "0.1.0"
+    "@ruijadom/telescope-core": "0.1.1",
+    "@ruijadom/telescope-browser": "0.1.1",
+    "@ruijadom/telescope-cursor": "0.1.1",
+    "@ruijadom/telescope-vite": "0.1.1",
+    "@ruijadom/telescope-webpack": "0.1.1",
+    "@ruijadom/telescope-cli": "0.1.1"
   }
 }
