@@ -30,8 +30,8 @@
     "release": "npm run build && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.7",
-    "tsup": "^8.0.1",
+    "@changesets/cli": "^2.29.8",
+    "tsup": "^8.5.1",
     "typescript": "^5.3.3"
   },
   "engines": {
